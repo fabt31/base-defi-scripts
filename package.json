@@ -1,0 +1,22 @@
+{
+  "name": "base-defi-scripts",
+  "version": "1.0.0",
+  "description": "DeFi interaction scripts for Base L2",
+  "scripts": {
+    "swap:uniswap": "node uniswap_v3_swap.js",
+    "bridge": "node bridge_eth_to_base.js",
+    "portfolio": "node scripts/portfolio_tracker.js",
+    "rebalance": "node scripts/rebalance.js"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "chai": "^4.3.10"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
